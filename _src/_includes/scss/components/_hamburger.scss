@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+.hamburger {
+    appearance: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--_gap);
+    width: max-content;
+    padding: var(--_padding);
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+
+    @include mq(md) {
+        display: none;
+    }
+}
