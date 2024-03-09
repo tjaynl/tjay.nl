@@ -68,7 +68,7 @@ $site-header-justify-content: space-between;
 // Headings
 // -----------------------------------------------------------------------------
 
-$content-max-width: 60rem;
-$content-bleed-max-width: 74rem;
+$content-max-width: var(--wrap-size-md);
+$content-bleed-max-width: var(--wrap-size-lg);
 
 $content-padding-inline: 2rem;

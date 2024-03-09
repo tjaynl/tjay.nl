@@ -21,4 +21,16 @@
             }
         }
     }
+
+
+
+    //
+    // Sizes
+    //
+    
+
+    // Wrapper sizes
+    @each $prop, $value in $wrapper-sizes {
+        --wrap-size-#{$prop}: #{$value};
+    }
 }
