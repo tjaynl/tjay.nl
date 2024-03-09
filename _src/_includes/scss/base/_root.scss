@@ -22,13 +22,27 @@
         }
     }
 
+    //
+    // Fonts
+    //
+
+    // Font Families
+    @each $prop, $value in $font-family-map {
+        --ff-#{$prop}: #{$value};
+    }
+
+
+    // Font Weights
+    @each $prop, $value in $font-weights-map {
+        --fw-#{$prop}: #{$value};
+    }
+
 
 
     //
     // Sizes
     //
     
-
     // Wrapper sizes
     @each $prop, $value in $wrapper-sizes {
         --wrap-size-#{$prop}: #{$value};
