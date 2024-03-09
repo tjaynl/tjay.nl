@@ -1,6 +1,11 @@
 ---
 layout: layouts/home.vto
 title: Homepage
+
+menu:
+  visible: true
+  title: Home
+  order: 1
 ---
 
 # Hello World
