@@ -17,7 +17,7 @@ jobs:
         run: deno task lume
 
       - name: Sync files to server
-        uses: SamKirkland/FTP-Deploy-Action@4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.tjay.nl
           username: ${{ secrets.FTP_USERNAME }}
