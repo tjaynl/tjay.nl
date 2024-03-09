@@ -14,7 +14,7 @@ export default function () {
     return (site: Site) => {
         site
             .use(esbuild())
-            // .use(favicon())
+            //.use(favicon())
             .use(inline())
             .use(jsx())
             .use(metas())
