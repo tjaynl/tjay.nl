@@ -5,22 +5,21 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Get latest code
-      uses: actions/checkout@v2
+      - name: Get latest code
+        uses: actions/checkout@v2
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: vx.x.x
 
-    - name: Build
-      run: hugo --minify
+      - name: Build
+        run: deno task lume
 
-    - name: Sync files to server
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ftp.tjay.nl
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: public/
+      - name: Sync files to server
+        uses: SamKirkland/FTP-Deploy-Action@4.3.5
+        with:
+          server: ftp.tjay.nl
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: _site/

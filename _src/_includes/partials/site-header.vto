@@ -1,0 +1,17 @@
+<div class="site-header">
+    <div class="site-header__inner">
+        <a class="site-logo" href="/">LOGO</a>
+        <nav class="site-nav">
+            <ul class="site-nav__list" role="navigation">
+                {{ for entry of search.pages("menu.visible=true", "menu.order") }}
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="{{ entry.url |> url }}"></a>
+                </li>
+                {{ /for }}
+            </ul>
+        </nav>
+        <label for="toggle" id="" class="">
+            <input type="checkbox" name="" id="toggle">
+        </label>
+    </div>
+</div>
