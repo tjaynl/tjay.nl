@@ -16,7 +16,18 @@
 // ...
 // -----------------------------------------------------------------------------
 
+.site-logo {
+    --text-decoration: none;
+    
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    letter-spacing: .025rem;
 
+    svg {
+        fill: var(--neutral-950);
+        width: 32px;
+    }
+}
 
 // -----------------------------------------------------------------------------
 // ...

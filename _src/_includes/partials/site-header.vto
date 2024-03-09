@@ -1,6 +1,12 @@
 <div class="site-header">
     <div class="site-header__inner wrapper">
-        <a class="site-logo" href="/">LOGO</a>
+        <a class="site-logo" href="/">
+            {{ if site.logo }}
+                <img src="{{ site.logo }}" inline />
+            {{ else }}
+                {{ site.name }}
+            {{ /if }}
+        </a>
         <nav class="site-nav">
             <ul class="site-nav__list" role="navigation">
                 {{ for entry of search.pages("menu.visible=true", "menu.order") }}
@@ -10,7 +16,7 @@
                 {{ /for }}
             </ul>
         </nav>
-        <label for="toggle" id="" class="">
+        <label for="toggle" id="hamburger" class="hamburger">
             <input type="checkbox" name="" id="toggle">
         </label>
     </div>
