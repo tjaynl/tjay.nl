@@ -49,3 +49,15 @@ $heading-font-family: var(--ff-accent);
 $heading-font-size: inherit;
 $heading-font-weight: var(--fw-bold);
 $heading-line-height: 1.1;
+
+
+
+// -----------------------------------------------------------------------------
+// Headings
+// -----------------------------------------------------------------------------
+
+$site-header-foreground: var(--neutral-400);
+$site-header-background: white;
+$site-header-padding: .75rem 0;
+
+$site-header-justify-content: space-between;
