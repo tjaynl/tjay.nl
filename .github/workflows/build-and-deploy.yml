@@ -14,7 +14,7 @@ jobs:
           deno-version: vx.x.x
 
       - name: Build
-        run: deno task lume
+        run: deno task lume cms
 
       - name: Sync files to server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
