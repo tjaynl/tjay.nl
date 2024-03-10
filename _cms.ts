@@ -1,4 +1,4 @@
-import lumeCMS from "lume/cms.ts";
+import lumeCMS, { Fs } from "lume/cms.ts";
 
 const cms = lumeCMS({
     site: {
