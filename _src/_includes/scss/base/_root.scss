@@ -32,6 +32,12 @@
     }
 
 
+    // Font sizes
+    @each $prop, $value in $font-sizes-map {
+        --fs-#{$prop}: #{$value};
+    }
+
+
     // Font Weights
     @each $prop, $value in $font-weights-map {
         --fw-#{$prop}: #{$value};

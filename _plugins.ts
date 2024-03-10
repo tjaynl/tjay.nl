@@ -23,9 +23,6 @@ export default function () {
             .use(postcss())
             .use(svgo())
             .use(transform_images())
-            .use(decapCMS({
-                identity: "netlify",
-            }))
 
             .copy("js")
             .copy("static", ".");

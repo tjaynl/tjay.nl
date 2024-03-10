@@ -4,16 +4,3 @@ layout: layouts/base.vto
 <main class="[] [ content-grid ] [ region | flow ]">
     {{ content }}
 </main>
-
-
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
