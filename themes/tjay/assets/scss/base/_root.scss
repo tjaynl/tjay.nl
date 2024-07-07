@@ -1,0 +1,62 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// ROOT
+// -----------------------------------------------------------------------------
+
+:root {
+    @each $color, $shade-map in $active-theme {
+        @each $shade, $value in $shade-map {
+            --#{$color}-#{$shade}: #{$value};
+        }
+    }
+
+
+
+    @if ($enable-media-query-dark-mode) {
+        @media (prefers-color-scheme: dark) {
+            @each $color, $shade-map in $dark {
+                @each $shade, $value in $shade-map {
+                    --#{$color}-#{$shade}: #{$value};
+                }
+            }
+        }
+    }
+
+
+
+    // FONTS
+    @each $prop, $value in $font-families {
+        --ff-#{$prop}: #{$value};
+    }
+
+
+    @each $prop, $value in $font-sizes {
+        --fs-#{$prop}: #{$value};
+    }
+
+
+    @each $prop, $value in $font-weights {
+        --fw-#{$prop}: #{$value};
+    }
+
+
+
+    // SIZES
+
+    @each $prop, $value in $spaces {
+        --size-#{$prop}: #{$value};
+    }
+
+
+
+    // WIDTHS
+
+    @each $prop, $value in $wrapper-sizes {
+        --width-#{$prop}: #{$value};
+    }
+
+
+
+
+}

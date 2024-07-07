@@ -1,0 +1,63 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// BUTTON
+// -----------------------------------------------------------------------------
+
+.button {
+    --_button-foreground: var(--button-foreground, #{$button-foreground});
+    --_button-foreground-hover: var(--button-foreground-hover, #{$button-foreground-hover});
+    --_button-background: var(--button-background, #{$button-background});
+    --_button-background-hover: var(--button-background-hover, #{$button-background-hover});
+    --_button-font-weight: var(--button-font-weight, #{$button-font-weight});
+    --_button-padding: var(--button-padding, #{$button-padding});
+    --_button-border-radius: var(--button-border-radius, #{$button-border-radius});
+    --_button-transition: var(--button-transition, #{$button-transition});
+
+    --text-decoration: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+    color: var(--_button-foreground);
+    background: var(--_button-background);
+    padding: var(--_button-padding);
+    font-weight: var(--_button-font-weight);
+    border: 2px solid var(--button-border-color, transparent);
+    border-radius: var(--_button-border-radius);
+    transition: var(--_button-transition);
+
+    &:is(:hover) {
+        --button-foreground: var(--_button-foreground-hover);
+        --button-background: var(--_button-background-hover);
+    }
+}
+
+
+
+//
+//
+//
+
+.button {
+    &[data-type="primary"] {
+        --button-foreground: #{$button-primary-foreground};
+        --button-background: #{$button-primary-background};
+
+        &:is(:hover) {
+            --button-foreground: #{$button-primary-foreground-hover};
+            --button-background: #{$button-primary-background-hover};
+        }
+    }
+
+    &[data-type="secondary"] {
+        --button-foreground: #{$button-secondary-foreground};
+        --button-background: #{$button-secondary-background};
+
+        &:is(:hover) {
+            --button-foreground: #{$button-secondary-foreground-hover};
+            --button-background: #{$button-secondary-background-hover};
+        }
+    }
+}

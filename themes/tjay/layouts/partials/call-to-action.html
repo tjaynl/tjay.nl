@@ -1,0 +1,13 @@
+{{ with .Site.Params.call_to_action }}
+    {{ if .enable }}
+    <section class="[ call-to-action ] [ ] [ region ]">
+        <div class="[ wrapper ] [ flow ] [ text-centered ]">
+            <h2>{{ .title }}</h2>
+            <div class="flex-group mx-auto">
+                <a href="{{ .button.primary_url }}" class="button">{{ .button.primary_text}}</a>
+                <a href="{{ .button.secondary_url }}" class="button">{{ .button.secondary_text}}</a>
+            </div>
+        </div>
+    </section>
+    {{ end }}
+{{ end }}

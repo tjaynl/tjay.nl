@@ -1,0 +1,36 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// Grid Auto Fit
+// -----------------------------------------------------------------------------
+
+.grid-auto-fit {
+    --_grid-placement: var(--grid-placement, auto-fit);
+    --_grid-min-col-size: var(--grid-min-col-size, 16rem);
+    --_grid-gap: var(--grid-gap, #{$grid-gap});
+
+    display: grid;
+    grid-template-columns: repeat(var(--_grid-placement), minmax(var(--_grid-min-col-size), 1fr));
+    gap: var(--_grid-gap);
+}
+
+
+
+// -----------------------------------------------------------------------------
+// presets
+// -----------------------------------------------------------------------------
+
+.grid-auto-fit {
+    &[data-cols="halfs"] {
+        --grid-min-col-size: clamp(16rem, 50dvw, 26rem);
+    }
+
+    &[data-cols="thirds"] {
+        --grid-min-col-size: clamp(16rem, 33%, 23rem);
+    }
+
+    &[data-rows="masonry"] {
+        grid-template-rows: masonry;
+        align-items: start;
+    }
+}

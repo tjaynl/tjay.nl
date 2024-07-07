@@ -1,0 +1,67 @@
+@use "../abstracts" as *;
+
+
+// -----------------------------------------------------------------------------
+// LOGO
+// -----------------------------------------------------------------------------
+
+.site__logo {
+    --text-decoration: none;
+
+    width: fit-content;
+    flex: 1;
+    font-weight: var(--fw-bold);
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Site Navigation
+// -----------------------------------------------------------------------------
+
+.site-nav {
+    --_nav-link-padding: var(--size-s);
+
+    width: 100%;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__link {
+        --text-decoration: none;
+        --text-decoration-hover: none;
+        --link-foreground: #{$site-nav-link-foreground};
+        --link-foreground-hover: #{$site-nav-link-foreground-hover};
+        display: block;
+        padding: var(--_nav-link-padding);
+    }
+}
+
+
+
+//
+//
+//
+
+@include mq(md) {
+    .site-nav {
+        &,
+        &__item {
+            width: auto;
+        }
+
+        &__item {
+            text-align: start;
+        }
+    }
+}

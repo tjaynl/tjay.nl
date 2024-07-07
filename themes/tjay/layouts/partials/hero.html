@@ -1,0 +1,14 @@
+{{ with .Site.Params.hero }}
+    {{ if .enable }}
+        <header class="[ hero ] [ region ]">
+            <div class="wrapper [ flow ] [ text-centered ]">
+                <h1>{{ .content.title }}</h1>
+                <p class="hero__text">{{ .content.description }}</p>
+                <div class="flex-group mx-auto">
+                    <a href="{{ .content.buttonPrimary.url }}" class="button" data-type="primary">{{ .content.buttonPrimary.label }}</a>
+                    <a href="{{ .content.buttonSecondary.url }}" class="button">{{ .content.buttonSecondary.label }}</a>
+                </div>
+            </div>
+        </header>
+    {{ end }}
+{{ end }}

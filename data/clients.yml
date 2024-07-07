@@ -1,0 +1,6 @@
+enable: true
+id: "clients"
+
+content:
+  title: "Who trusts our judgment"
+  client_logos: [ "" ]

@@ -1,0 +1,60 @@
+baseURL: https://tjay.nl
+languageCode: en-us
+title: Tjay.nl
+theme: tjay
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+
+  sitenav:
+    - title: Home
+      url: /
+      weight: 1
+    - title: About
+      url: /about
+      weight: 2
+    - title: Portfolio
+      url: /portfolio
+      weight: 3
+    - title: Blog
+      url: /blog
+      sublinks:
+        - title: Dropdown item
+          url: /
+    - title: Get in touch
+      url: /contact
+      button: true
+
+  hero:
+    enable: true
+    content:
+      title: Timothy Remst. Building Digital Products & Brands
+      description: >
+        I’m Timothy, a creative Illustrator & Art Director based in Tilburg. I seek to push the limits of creativity to create high-engaging and memorable interactive experiences.
+      buttonPrimary:
+        label: Get in touch
+        url: /contact
+      buttonSecondary:
+        label: About me
+        url: /about
+
+  portfolio:
+    enable: true
+    content:
+      title: My recent work
+      subtitle: Crafting experiences and seeking to make the complex clear & beautiful.
+      view_project: "View project"
+
+  call_to_action:
+    enable: true
+    title: LET'S WORK TOGETHER
+    background_image: https://images.unsplash.com/photo-1557180295-76eee20ae8aa?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    button:
+      primary_text: Submit Query
+      primary_url: /contact
+      secondary_text: Not Convinced
+      secondary_url: /portfolio

@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+
+
+// -----------------------------------------------------------------------------
+// Content Grid
+// -----------------------------------------------------------------------------
+
+.content-grid {
+    --_gap: var(--gap, #{$content-grid-gap});
+    --_full: minmax(var(--_gap), 1fr);
+    --_content: min(#{$content-grid-width}, 100% - var(--_gap) * 2);
+    --_popout: minmax(0, 2rem);
+    --_feature: minmax(0, 5rem);
+
+    display: grid;
+    grid-template-columns:
+        [full-start] var(--_full)
+        [feature-start] var(--_feature)
+        [popout-start] var(--_popout)
+        [content-start] var(--_content) [content-end]
+        var(--_popout) [popout-end]
+        var(--_feature) [feature-end]
+        var(--_full) [full-end];
+}
+
+
+
+.content-grid {
+    & > *:not(.popout, .feature, .full) {
+        grid-column: content;
+    }
+    .popout {
+        grid-column: popout;
+    }
+    .feature {
+        grid-column: feature;
+    }
+    .full {
+        grid-column: full;
+    }
+}

@@ -1,0 +1,30 @@
+{{ with .Site.Data.testimonial }}
+    {{ if .enable }}
+        <section class="[ testimonial ] [ fullwidth ] [ region ]">
+            <div class="wrapper">
+                <div class="section-title">
+                    <h2 class="title">{{ .content.title }}</h2>
+                    <p>{{ .content.subtitle }}</p>
+                </div>
+                <div class="[ testimonial-list ] [ grid-auto-fit ]" data-cols="thirds">
+                    {{ range .content.testimonial_item }}
+                        <div class="card">
+                            <div class="client-meta [ flow ]">
+                                <a href="" class="client-image">
+                                    <img class="client-avatar" src="{{ .thumb | absURL }}" alt="{{ .name }}" loading="lazy">
+                                </a>
+                                <div class="client-info">
+                                    <h3 class="client-name">{{ .name }}</h3>
+                                    <p class="client-function">{{ .company_position }}</p>
+                                </div>
+                                <div class="[ testimonial__content ] [ flow ]">
+                                    {{ .quote }}
+                                </div>
+                            </div>
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+        </section>
+    {{ end }}
+{{ end }}

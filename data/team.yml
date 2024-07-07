@@ -1,0 +1,8 @@
+enable: true
+id: "team"
+
+content:
+  title: Team that makes a difference
+  members:
+    - name: Timothy Remst
+      function: Founder

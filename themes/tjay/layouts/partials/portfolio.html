@@ -1,0 +1,27 @@
+{{ with .Site.Params.portfolio }}
+    {{ if .enable }}
+        <section class="[ portfolio ] [ flow ] [ region ]">
+            <div class="section-title">
+                <h2 class="title">{{ .content.title }}</h2>
+                <p>{{ .content.subtitle }}</p>
+            </div>
+            <div class="grid-auto-fit" data-cols="halfs">
+                {{ range first 6 (where $.Site.RegularPages "Type" "portfolio") }}
+                    <div class="card">
+                        <div class="card__thumb">
+                            <img src="{{ .Params.Image | absURL }}" alt="">
+                        </div>
+                        <div class="card__content [ flow ]">
+                            <span>{{ delimit .Params.category ", " }}</span>
+                            <h3>{{ .Title }}</h3>
+                            <a href="{{ .Permalink }}" class="read-more">{{ .Site.Params.portfolio.content.view_project  }}</a>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+            {{/*  <div class="site-project-pagination">
+                {{ template "_internal/pagination.html" . }}
+            </div>  */}}
+        </section>
+    {{ end }}
+{{ end }}
