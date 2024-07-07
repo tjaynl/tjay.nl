@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Tjay.nl</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Tjay.nl</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Jul 2024 18:42:37 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Third Project</title>
+      <link>http://localhost:1313/projects/third-project/</link>
+      <pubDate>Sun, 07 Jul 2024 18:42:37 +0200</pubDate>
+      <guid>http://localhost:1313/projects/third-project/</guid>
+      <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ipsam, error nihil vel eius.&#xA;The projects goal Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia architecto veritatis culpa iste saepe. Id eius nobis consequatur minima repellendus.&#xA;How did we achief that Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore in, illo, provident iure adipisci nam cumque aspernatur consequuntur maiores quos quo nihil ab soluta possimus! Ipsa voluptatibus blanditiis tempora atque impedit molestias consequatur.</description>
+    </item>
+    <item>
+      <title>John Do construction</title>
+      <link>http://localhost:1313/projects/second-project/</link>
+      <pubDate>Wed, 08 May 2024 16:50:25 +0200</pubDate>
+      <guid>http://localhost:1313/projects/second-project/</guid>
+      <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ipsam, error nihil vel eius.&#xA;The projects goal Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia architecto veritatis culpa iste saepe. Id eius nobis consequatur minima repellendus.&#xA;How did we achief that Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore in, illo, provident iure adipisci nam cumque aspernatur consequuntur maiores quos quo nihil ab soluta possimus! Ipsa voluptatibus blanditiis tempora atque impedit molestias consequatur.</description>
+    </item>
+    <item>
+      <title>Pancake Heaven</title>
+      <link>http://localhost:1313/projects/first-project/</link>
+      <pubDate>Wed, 08 May 2024 16:44:25 +0200</pubDate>
+      <guid>http://localhost:1313/projects/first-project/</guid>
+      <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ipsam, error nihil vel eius.&#xA;The projects goal Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia architecto veritatis culpa iste saepe. Id eius nobis consequatur minima repellendus.&#xA;How did we achief that Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore in, illo, provident iure adipisci nam cumque aspernatur consequuntur maiores quos quo nihil ab soluta possimus! Ipsa voluptatibus blanditiis tempora atque impedit molestias consequatur.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,14 +1,10 @@
-{{ with .Site.Params.hero }}
-    {{ if .enable }}
-        <header class="[ hero ] [ region ]">
-            <div class="wrapper [ flow ] [ text-centered ]">
-                <h1>{{ .content.title }}</h1>
-                <p class="hero__text">{{ .content.description }}</p>
-                <div class="flex-group mx-auto">
-                    <a href="{{ .content.buttonPrimary.url }}" class="button" data-type="primary">{{ .content.buttonPrimary.label }}</a>
-                    <a href="{{ .content.buttonSecondary.url }}" class="button">{{ .content.buttonSecondary.label }}</a>
-                </div>
-            </div>
-        </header>
-    {{ end }}
-{{ end }}
+<section class="[ hero ] [] [ region ]">
+    <div class="hero__inner [ flow ]">
+        <h1 class="hero__title">Timothy Remst. Building Digital Products & Brands</h1>
+        <p class="hero__description">I'm Timothy, a creative Illustrator & Art Director based in Tilburg. I seek to push the limits of creativity to create high-engaging and memorable interactive experiences.</p>
+        <div class="hero__buttons">
+            <a href="/contact" class="button">Get In Touch</a>
+            <a href="/about" class="button button--ghost">About Me</a>
+        </div>
+    </div>
+</section>

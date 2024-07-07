@@ -2,13 +2,7 @@
 // Font Families
 // -----------------------------------------------------------------------------
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url("/fonts/Montserrat-VariableFont.woff2") format("woff2");
-    font-weight: 100 900;
-}
-
-$-ff-sans: "Montserrat, sans-serif"; //"-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif";
+$-ff-sans: "-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif";
 $-ff-serif: "Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol";
 $-ff-mono: "Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace";
 
@@ -25,14 +19,14 @@ $font-families: (
 // -----------------------------------------------------------------------------
 
 $font-sizes: (
-    "200": clamp(0.7035rem, 0.8083rem + -0.1353vi, 0.7813rem),
-    "300": clamp(0.9375rem, 0.9374rem + 0.0004vi, 0.9377rem),
-    "400": clamp(1.125rem, 1.0815rem + 0.2174vi, 1.25rem),
-    "500": clamp(1.35rem, 1.24rem + 0.55vi, 1.6663rem),
-    "600": clamp(1.62rem, 1.4109rem + 1.0454vi, 2.2211rem),
-    "700": clamp(1.944rem, 1.5904rem + 1.7682vi, 2.9607rem),
-    "800": clamp(2.3328rem, 1.7715rem + 2.8067vi, 3.9467rem),
-    "900": clamp(2.7994rem, 1.9432rem + 4.281vi, 5.2609rem),
+  "200": clamp(0.7035rem, 0.7472rem + -0.0466vi, 0.7378rem),
+  "300": clamp(0.8854rem, 0.8712rem + 0.0709vi, 0.9377rem),
+  "400": clamp(1.0625rem, 1.0117rem + 0.2542vi, 1.25rem),
+  "500": clamp(1.275rem, 1.1689rem + 0.5305vi, 1.6663rem),
+  "600": clamp(1.53rem, 1.3426rem + 0.9371vi, 2.2211rem),
+  "700": clamp(1.836rem, 1.531rem + 1.5251vi, 2.9607rem),
+  "800": clamp(2.2032rem, 1.7304rem + 2.364vi, 3.9467rem),
+  "900": clamp(2.6438rem, 1.9341rem + 3.5486vi, 5.2609rem),
 );
 
 

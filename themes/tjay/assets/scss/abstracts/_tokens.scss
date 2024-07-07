@@ -1,45 +1,65 @@
 @use "colors" as *;
 @use "typography" as *;
-@use "sizes" as *;
+// @use "sizes" as *;
 
 // -----------------------------------------------------------------------------
 // THEME
 // -----------------------------------------------------------------------------
 
-$active-theme: $light;
-$enable-media-query-dark-mode: true;
+$active-theme: $dark;
+$enable-media-query-dark-mode: false;
 
 
-$color-text-default: var(--neutral-400);
-$color-text-interactive-default: var(--accent-400);
-$color-text-interactive-hover: var(--accent-500);
+$primary-color: #83bc3c;
+$secondary-color: #be8dff;
+$accent-color: #0eaa9d;
 
-$color-background-default:  var(--neutral-50);
+
+
+$background-color: var(--background-color);
+$background-alt-color: var(--background-alt-color);
+
+
+$text-color: var(--text-color);
+$text-alt-color: var(--text-alt-color);
+
 
 
 $flex-group-gap: var(--size-m);
 $grid-gap: var(--size-m);
 
 
-$hero-padding-block: 6.6vmax;
-$section-padding-block: 3.3vmax;
-
-
-$global-radius: var(--size-3xs);
-
-
 
 // -----------------------------------------------------------------------------
-// BODY
+// Widths
 // -----------------------------------------------------------------------------
 
-$body-foreground: $color-text-default;
-$body-background: $color-background-default;
+$page-width: var(--width-md);
+$page-padding: 5dvw;
 
-$body-font-family: var(--ff-base);
-$body-font-size: var(--fs-400);
-$body-font-weight: var(--fw-300);
-$body-line-height: 1.5;
+$width-xs: 40em;
+$width-sm: 48em;
+$width-md: 64em;
+$width-lg: 80em;
+$width-xl: 96em;
+
+$breakpoint-xs: 640px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1536px;
+
+
+
+//
+//
+//
+
+$nav-link-color: var(--light-gray);
+$nav-link-color-hover: var(--primary);
+$nav-link-padding: var(--size-xs) var(--size-s);
+
+
 
 
 
@@ -47,11 +67,12 @@ $body-line-height: 1.5;
 // HEADING
 // -----------------------------------------------------------------------------
 
-$heading-foreground: var(--neutral-800);
-$heading-font-family: var(--ff-base);
+$heading-foreground: var(--heading-font-color);
+$heading-font-family: var(--ff-accent);
 $heading-font-size: inherit;
 $heading-font-weight: var(--fw-bold);
 $heading-line-height: 1.1;
+
 
 
 
@@ -59,40 +80,10 @@ $heading-line-height: 1.1;
 // LINK
 // -----------------------------------------------------------------------------
 
-$link-foreground: var(--accent-400);
-$link-foreground-hover: var(--accent-500);
-$link-text-decoration: underline;
-$link-text-decoration-hover: none;
-$link-line-offset: auto;
+$link-color: var(--link-color);
+$link-color-hover: var(--link-color-hover);
 
 
-
-// -----------------------------------------------------------------------------
-// Site Header
-// -----------------------------------------------------------------------------
-
-$site-header-foreground: var(--neutral-500);
-$site-header-background: var(--neutral-50);
-$site-header-padding: var(--size-s);
-$site-header-justify-content: space-between;
-
-$site-nav-link-foreground: var(--neutral-500);
-$site-nav-link-foreground-hover: var(--neutral-700);
-$site-nav-link-foreground-active: var(--neutral-900);
-
-
-
-// -----------------------------------------------------------------------------
-// WRAPPERS
-// -----------------------------------------------------------------------------
-
-$page-width: var(--width-md);
-$page-width-bleed: var(--width-lg);
-$page-padding: 2rem;
-
-// Content grid
-$content-grid-gap: clamp(1rem, 6vw, 3rem);
-$content-grid-width: 60ch;
 
 
 
@@ -100,25 +91,9 @@ $content-grid-width: 60ch;
 // BUTTON
 // -----------------------------------------------------------------------------
 
-$button-foreground: var(--neutral-600);
-$button-foreground-hover: var(--neutral-600);
-$button-background: var(--neutral-200);
-$button-background-hover: var(--neutral-300);
-$button-font-weight: var(--fw-medium);
-$button-padding: 1rem 1.5rem;
-$button-border-radius: 999rem;
-$button-transition: background 300ms ease-in, color 200ms ease-in-out;
-
-
-$button-primary-foreground: white;
-$button-primary-foreground-hover: white;
-$button-primary-background: var(--primary-400);
-$button-primary-background-hover: var(--primary-300);
-
-$button-secondary-foreground: white;
-$button-secondary-foreground-hover: white;
-$button-secondary-background: var(--accent-400);
-$button-secondary-background-hover: var(--accent-500);
+$button-foreground: var(--button-color);
+$button-background: var(--button-background-color);
+$button-background-hover: var(--button-background-hover);
 
 
 
@@ -126,23 +101,13 @@ $button-secondary-background-hover: var(--accent-500);
 // CARD
 // -----------------------------------------------------------------------------
 
-$card-foreground: var(--neutral-500);
-$card-background: var(--neutral-100);
+$card-foreground: var(--light-gray);
+$card-background: var(--background-alt-color);
 
-$card-font-family: inherit;
+$card-font-family: var(--ff-base);
 
 $card-flow-space: .25rem;
-$card-padding: var(--size-m);
-$card-border-radius: var(--size-2xs);
+$card-padding: var(--size-l) var(--size-m);
+$card-border-radius: var(--size-s);
 
 $card-transition: all 300ms cubic-bezier(0.36,0.03,0,0.91);
-
-
-
-// -----------------------------------------------------------------------------
-// INPUT
-// -----------------------------------------------------------------------------
-
-$input-background: transparent;
-$input-border: 1px solid var(--neutral-500);
-$input-padding: var(--size-2xs);

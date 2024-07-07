@@ -1,7 +1,0 @@
-{{ define "main" }}
-    <article class="[ showcase ] [ fullwidth | content-grid ] [ region | flow ]">
-        <h1>{{ .Title }}</h1>
-        <img class="feature" src="{{ .Params.image | absURL }}" alt="Showcase featured image">
-        {{ .Content }}
-    </article>
-{{ end }}

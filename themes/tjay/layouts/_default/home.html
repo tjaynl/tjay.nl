@@ -1,5 +1,7 @@
 {{ define "main" }}
-    {{ partial "hero.html" . }}
-    {{ partial "portfolio.html" . }}
-    {{ partial "call-to-action.html" . }}
+  {{ .Content }}
+  {{ range site.RegularPages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+  {{ end }}
 {{ end }}

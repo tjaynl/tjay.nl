@@ -1,8 +1,8 @@
 @use "../abstracts" as *;
 
-// -----------------------------------------------------------------------------
-// Flex Group
-// -----------------------------------------------------------------------------
+//
+//
+//
 
 .flex-group {
     --_flex-group-col-gap: var(--flex-group-col-gap, #{$flex-group-gap});
@@ -12,10 +12,4 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: var(--_flex-group-col-gap);
-    row-gap: var(--_flex-group-row-gap);
-    max-width: var(--_flex-group-width);
-
-    &.mx-auto {
-        justify-content: center;
-    }
 }
