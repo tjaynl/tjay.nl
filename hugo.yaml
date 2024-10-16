@@ -6,9 +6,9 @@ theme: tjay
 params:
   sitenav:
     - title: Home
-      url: ""
+      url: "/"
     - title: About
-      url: "about"
+      url: "/about"
 
 
   projects:
@@ -17,6 +17,6 @@ params:
       title: Selectec work
       link:
         text: View all
-        url: "projects"
+        url: "/projects"
     content:
       view_project: View showcase
