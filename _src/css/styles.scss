@@ -1,0 +1,68 @@
+@use "scss/abstracts" as *;
+
+@forward "scss/base";
+@forward "scss/compositions";
+@forward "scss/utilities";
+@forward "scss/blocks";
+
+// -----------------------------------------------------------------------------
+// GLOBALS
+// -----------------------------------------------------------------------------
+
+h1 {
+  --heading-font-size: var(--fs-900);
+}
+
+h2 {
+  --heading-font-size: var(--fs-700);
+}
+
+h3 {
+  --heading-font-size: var(--fs-600);
+}
+
+// -----------------------------------------------------------------------------
+// COMPOSITIONS
+// -----------------------------------------------------------------------------
+
+.hero {}
+
+// -----------------------------------------------------------------------------
+// UTILITIES
+// -----------------------------------------------------------------------------
+
+.text--centered {
+  text-align: center;
+  max-width: unset;
+}
+
+// -----------------------------------------------------------------------------
+// BLOCKS
+// -----------------------------------------------------------------------------
+
+.hero {
+  background: var(--neutral-100);
+  padding-block-end: calc(6.6vmax + 80px);
+}
+
+.section--inverse {
+  margin-block-start: -80px;
+  background: var(--neutral-900);
+  color: var(--neutral-50);
+}
+
+.section--rounded {
+  border-radius: var(--space-2xl);
+}
+
+.block--services.region {
+  margin-block-start: 0;
+}
+
+.block--portfolio.region {
+  margin-block-end: 0;
+}
+
+// -----------------------------------------------------------------------------
+//  EXCEPTIONS
+// -----------------------------------------------------------------------------

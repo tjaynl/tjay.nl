@@ -1,0 +1,56 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// Hamburger
+// -----------------------------------------------------------------------------
+
+.hamburger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &__icon {
+    --icon-size: 64px;
+    height: var(--icon-size);
+    width: var(--icon-size);
+
+    .line {
+      --offset: -38;
+      --length: 24;
+
+      fill: none;
+      stroke: var(--hamburger-icon-color, #ffffff);
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: var(--length) var(--total-length);
+      stroke-dashoffset: var(--offset);
+      transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    .line--1,
+    .line--3 {
+      --total-length: 126.64183044433594;
+    }
+
+    .line--2 {
+      --total-length: 70;
+    }
+  }
+
+  &[aria-expanded="true"] .line--1,
+  &[aria-expanded="true"] .line--3 {
+    --offset: -94.1149185097;
+  }
+
+  &[aria-expanded="true"] .line--2 {
+    --offset: -50;
+    opacity: 0;
+  }
+}
+
+@media (width > 768px) {
+  .hamburger {
+    display: none;
+  }
+}

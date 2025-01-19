@@ -1,0 +1,26 @@
+layout: layouts/pages/home.vto
+
+menu:
+  visible: true
+  title: "Home"
+  url: "/"
+  order: 1
+
+title: "Homepage page title"
+description: "Homepage description"
+
+metas:
+  title: =title
+  description: =description
+
+hero_section:
+  subtitle: "Hero"
+  title: "I design digital experiances"
+
+services_section:
+  subtitle: "Services"
+  title: "We can provide you with the following services"
+
+portfolio_section:
+  subtitle: "Portfolio"
+  title: "Some of my featured work"

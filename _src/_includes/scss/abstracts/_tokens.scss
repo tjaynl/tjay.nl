@@ -1,0 +1,59 @@
+@use "colors" as *;
+
+// -----------------------------------------------------------------------------
+// THEME
+// -----------------------------------------------------------------------------
+
+$active-theme: $light;
+$enable-media-prefers-dark-mode: false;
+
+// -----------------------------------------------------------------------------
+// GLOBALS
+// -----------------------------------------------------------------------------
+
+$body-foreground: var(--neutral-950);
+$body-background: var(--neutral-50);
+$body-font-family: var(--ff-base);
+$body-font-size: var(--fs-400);
+$body-font-weight: var(--fw-regular);
+$body-line-height: 1.618;
+
+$heading-font-family: var(--ff-accent);
+$heading-font-size: inherit;
+$heading-font-weight: var(--fw-bold);
+$heading-line-height: 1.1;
+
+// -----------------------------------------------------------------------------
+// Site Header
+// -----------------------------------------------------------------------------
+
+$site-header-background: transparent;
+$site-header-padding: var(--space-s);
+
+// Hamburger
+$hamburger-padding: var(--size-2xs) var(--size-3xs);
+$hamburger-icon-color: var(--neutral-950);
+$hamburger-icon-width: 48px;
+$hamburger-icon-stroke-width: 7px;
+$hamburger-icon-animation-timing: 600ms;
+
+// -----------------------------------------------------------------------------
+// Site Navigation
+// -----------------------------------------------------------------------------
+
+$site-nav-order: 3;
+
+$nav-list-gap: var(--space-xs);
+
+$site-nav-link-color: var(--neutral-850);
+$site-nav-link-color-hover: var(--neutral-950);
+$site-nav-link-color-active: var(--neutral-950);
+
+$site-nav-link-background: transparent;
+$site-nav-link-background-hover: var(--neutral-150);
+$site-nav-link-background-active: var(--neutral-50);
+
+$site-nav-link-padding: var(--space-xs) var(--space-s);
+$site-nav-link-border-radius: var(--space-3xs);
+
+$site-nav-link-text-decoration: none;

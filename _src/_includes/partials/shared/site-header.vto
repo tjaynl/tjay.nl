@@ -1,0 +1,17 @@
+<header class="site-header fixed full">
+    <div class="site-header__inner">
+        <a href="/" class="brand">
+            <span>{{ site.name }}</span>
+        </a>
+        <button class="hamburger" aria-controls="site-nav" aria-expanded="false">
+            <span class="visually-hidden">menu</span>
+            <svg class="hamburger__icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path class="line line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
+                <path class="line line--2" d="M0 50h70" />
+                <path class="line line--3" d="M0 60h62c13 0 6-28-4-18L35 65" />
+            </svg>
+        </button>
+        {{ include "partials/shared/site-nav.vto" }}
+    </div>
+</header>
+

@@ -1,0 +1,14 @@
+root: "https://tjay.nl/"
+name: Tjay
+
+metas:
+  site: =name
+  title: =title
+  description: =description
+  image: =image
+  twitter: ""
+  lang: en
+  generator: true
+
+analytics:
+  umami_id: "83503fb3-3340-4a10-bc93-e9afea6a3587"
